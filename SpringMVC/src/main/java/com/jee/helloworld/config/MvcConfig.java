@@ -14,7 +14,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 //set class as a configuration class
 @Configuration
 // set directory for scan to get spring components
-@ComponentScan({"com.jee.helloworld.controller" })
+@ComponentScan({"com.jee.helloworld.controller","com.jee.helloworld.model"  })
 public class MvcConfig implements WebMvcConfigurer {
     @Bean
     public ViewResolver viewResolver() {

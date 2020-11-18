@@ -1,3 +1,4 @@
-/Users/doveneagogue/Dev/Java EE/HelloWorld/src/main/java/com/jee/helloworld/config/WebAppInitializer.java
-/Users/doveneagogue/Dev/Java EE/HelloWorld/src/main/java/com/jee/helloworld/controller/HelloController.java
-/Users/doveneagogue/Dev/Java EE/HelloWorld/src/main/java/com/jee/helloworld/config/MvcConfig.java
+/Users/doveneagogue/Dev/Java EE/cesi-jee/SpringMVC/src/main/java/com/jee/helloworld/config/MvcConfig.java
+/Users/doveneagogue/Dev/Java EE/cesi-jee/SpringMVC/src/main/java/com/jee/helloworld/config/WebAppInitializer.java
+/Users/doveneagogue/Dev/Java EE/cesi-jee/SpringMVC/src/main/java/com/jee/helloworld/controller/HelloController.java
+/Users/doveneagogue/Dev/Java EE/cesi-jee/SpringMVC/src/main/java/com/jee/helloworld/model/Student.java

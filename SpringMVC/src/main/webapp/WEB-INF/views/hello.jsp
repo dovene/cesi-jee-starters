@@ -9,5 +9,20 @@
 <body>
 	<h2>Hello padawan</h2>
 	<p>Welcome to the wonderful world of Java EE<p>
+	  <c:out value="Your name is : ${student.fullName}" />
+      <br/>
+      <c:out value="Your will serve in : ${student.city}" />
+
+    <br/>
+    <a href="hello/login"> New Padawan</a>
+    <br/>
+  	<h2>Log List</h2>
+      <ul> <c:forEach items="${students}" var="student">
+      <li>
+      <c:out value="${student.fullName}" />
+      <c:out value="${student.city}" />
+      </li>
+      </c:forEach>
+      </ul>
 </body>
 </html>

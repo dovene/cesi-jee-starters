@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,19 +10,12 @@
 <body>
 	<h2>Hello padawan</h2>
 	<p>Welcome to the wonderful world of Java EE<p>
-	  <c:out value="Your name is : ${student.fullName}" />
-      <br/>
-      <c:out value="Your will serve in : ${student.city}" />
-    <br/>
-    <a href="hello/login"> New Padawan</a>
-    <br/>
-  	<h2>Log List</h2>
-      <ul> <c:forEach items="${students}" var="student">
-      <li>
-      <c:out value="${student.fullName}" />
-      <c:out value="${student.city}" />
-      </li>
-      </c:forEach>
-      </ul>
+       <form:form action="#" modelAttribute="student" method="post">
+             Name : <form:input type="text" path="fullName" />
+            <br />
+             Country : <form:input type="text" path="city" />
+           <br />
+             <button type="submit">Login</button>
+        </form:form>
 </body>
 </html>
